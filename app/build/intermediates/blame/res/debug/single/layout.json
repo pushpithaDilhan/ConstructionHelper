@@ -4,6 +4,10 @@
         "source": "C:\\Users\\Pushpitha\\AndroidStudioProjects\\ConstructionHelper\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.4.0\\res\\layout\\abc_action_menu_item_layout.xml"
     },
     {
+        "merged": "C:\\Users\\Pushpitha\\AndroidStudioProjects\\ConstructionHelper\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_circle.xml",
+        "source": "C:\\Users\\Pushpitha\\AndroidStudioProjects\\ConstructionHelper\\app\\src\\main\\res\\layout\\activity_circle.xml"
+    },
+    {
         "merged": "C:\\Users\\Pushpitha\\AndroidStudioProjects\\ConstructionHelper\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_activity_chooser_view_list_item.xml",
         "source": "C:\\Users\\Pushpitha\\AndroidStudioProjects\\ConstructionHelper\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.4.0\\res\\layout\\abc_activity_chooser_view_list_item.xml"
     },
@@ -126,6 +130,10 @@
     {
         "merged": "C:\\Users\\Pushpitha\\AndroidStudioProjects\\ConstructionHelper\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_bar_up_container.xml",
         "source": "C:\\Users\\Pushpitha\\AndroidStudioProjects\\ConstructionHelper\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.4.0\\res\\layout\\abc_action_bar_up_container.xml"
+    },
+    {
+        "merged": "C:\\Users\\Pushpitha\\AndroidStudioProjects\\ConstructionHelper\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_category.xml",
+        "source": "C:\\Users\\Pushpitha\\AndroidStudioProjects\\ConstructionHelper\\app\\src\\main\\res\\layout\\activity_category.xml"
     },
     {
         "merged": "C:\\Users\\Pushpitha\\AndroidStudioProjects\\ConstructionHelper\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_bar_view_list_nav_layout.xml",
