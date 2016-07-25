@@ -76,6 +76,10 @@
         "source": "C:\\Users\\Pushpitha\\AndroidStudioProjects\\ConstructionHelper\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.4.0\\res\\layout\\abc_screen_simple.xml"
     },
     {
+        "merged": "C:\\Users\\Pushpitha\\AndroidStudioProjects\\ConstructionHelper\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_rect.xml",
+        "source": "C:\\Users\\Pushpitha\\AndroidStudioProjects\\ConstructionHelper\\app\\src\\main\\res\\layout\\activity_rect.xml"
+    },
+    {
         "merged": "C:\\Users\\Pushpitha\\AndroidStudioProjects\\ConstructionHelper\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_screen_simple_overlay_action_mode.xml",
         "source": "C:\\Users\\Pushpitha\\AndroidStudioProjects\\ConstructionHelper\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.4.0\\res\\layout\\abc_screen_simple_overlay_action_mode.xml"
     },

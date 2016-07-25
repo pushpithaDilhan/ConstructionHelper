@@ -11,15 +11,10 @@ import android.widget.Toast;
 
 public class circle extends AppCompatActivity {
 
-    TextView areaAnswer;
-    TextView volAnswer ;
-    float radius;
-    float thick;
-    float area_answer;
-    float volume;
-    EditText r;
-    EditText t;
-    Boolean hasFuture = false;                           // to indicate whether there are future events
+    private TextView areaAnswer,volAnswer;
+    private float radius ,thick , area_answer , volume;
+    private EditText r,t;
+    private Boolean hasFuture = false;                           // to indicate whether there are future events
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -27,7 +22,7 @@ public class circle extends AppCompatActivity {
         setContentView(R.layout.activity_circle);
         r = (EditText) findViewById(R.id.txt_radius);
         t = (EditText) findViewById(R.id.txt_thick);
-        Button area = ( Button) findViewById(R.id.button_area);
+        Button area = ( Button) findViewById(R.id.button_area1);
         Button vol = ( Button) findViewById(R.id.button_volume);
         Button next = ( Button) findViewById(R.id.button_next);
         areaAnswer = (TextView) findViewById(R.id.area_ans);
@@ -41,10 +36,12 @@ public class circle extends AppCompatActivity {
                     radius = Float.parseFloat(r.getText().toString().trim());
                     System.out.println(radius);
                     area_answer = (float) Math.PI*radius*radius ;
+                    hasFuture = true ;
                     areaAnswer.setText(area_answer+"");
                     volAnswer.setText("");
                 }catch(Exception e){
                     Toast.makeText(getApplicationContext() ,"R value is not acceptable",Toast.LENGTH_SHORT).show();
+                    hasFuture  =false ;
                 }
             }
         });
@@ -68,6 +65,7 @@ public class circle extends AppCompatActivity {
                         hasFuture = true;
                     }catch(Exception e){
                         Toast.makeText(getApplicationContext(),"Thickness or R is not acceptable.",Toast.LENGTH_SHORT).show();
+                        hasFuture = false ;
                     }
                 }
             }
@@ -81,7 +79,7 @@ public class circle extends AppCompatActivity {
                     Intent category = new Intent(getApplicationContext(),Category.class);
                     startActivity(category);
                 }else{
-                    Toast.makeText(getApplicationContext(),"Volume is needed.",Toast.LENGTH_SHORT).show();
+                    Toast.makeText(getApplicationContext(),"Area or Volume is needed.",Toast.LENGTH_SHORT).show();
                 }
 
             }

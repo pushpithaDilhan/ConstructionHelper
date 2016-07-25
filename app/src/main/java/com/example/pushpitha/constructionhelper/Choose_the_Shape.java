@@ -9,12 +9,12 @@ import android.widget.Toast;
 
 public class Choose_the_Shape extends AppCompatActivity {
 
-    ImageButton circle;
-    ImageButton rectangle;
-    ImageButton parallelogram;
-    ImageButton bulletshape;
-    ImageButton oval;
-    ImageButton houseshape;
+    private ImageButton circle;
+    private ImageButton rectangle;
+    private ImageButton parallelogram;
+    private ImageButton bulletshape;
+    private ImageButton oval;
+    private ImageButton houseshape;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -29,11 +29,15 @@ public class Choose_the_Shape extends AppCompatActivity {
         circle.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                System.out.println("Clicked");
-                if(v.getId()==R.id.circle){
                     Intent circle_next = new Intent(getApplicationContext(),circle.class);
                     startActivity(circle_next);
-                }
+            }
+        });
+        rectangle.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent rect_next = new Intent(getApplicationContext(),rect.class);
+                startActivity(rect_next);
             }
         });
     }

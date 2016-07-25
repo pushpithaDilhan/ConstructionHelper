@@ -16,7 +16,8 @@
             </intent-filter>
         </activity>
         <activity android:name=".circle" />
-        <activity android:name=".Category"></activity>
+        <activity android:name=".Category" />
+        <activity android:name=".rect"></activity>
     </application>
 
 </manifest>

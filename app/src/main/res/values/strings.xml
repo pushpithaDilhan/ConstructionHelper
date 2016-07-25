@@ -1,3 +1,15 @@
 <resources>
     <string name="app_name">Construction Helper</string>
+    <string-array name="category_list">
+        <item>Concrete</item>
+        <item>Block</item>
+        <item>Brick</item>
+        <item>Rubble</item>
+        <item>Roofing</item>
+        <item>Painting</item>
+        <item>Plastering</item>
+    </string-array>
+
+
 </resources>
+
