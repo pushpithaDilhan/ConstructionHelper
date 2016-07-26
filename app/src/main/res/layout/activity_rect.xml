@@ -36,6 +36,7 @@
         android:layout_height="wrap_content"
         android:id="@+id/editText_mc"
         android:layout_below="@+id/imageView2"
+        android:inputType="number"
         android:layout_alignRight="@+id/txt_thick"
         android:layout_alignEnd="@+id/txt_thick" />
 
@@ -44,6 +45,7 @@
         android:layout_height="wrap_content"
         android:id="@+id/editText_nc"
         android:layout_alignTop="@+id/editText_mc"
+        android:inputType="number"
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true" />
 
@@ -52,6 +54,7 @@
         android:layout_height="wrap_content"
         android:id="@+id/editText_t"
         android:layout_below="@+id/editText_nc"
+        android:inputType="number"
         android:layout_alignRight="@+id/editText_nc"
         android:layout_alignEnd="@+id/editText_nc"
         android:layout_marginTop="36dp" />
@@ -132,14 +135,14 @@
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:id="@+id/textView_area"
         android:layout_alignTop="@+id/textView6"
-        android:layout_alignLeft="@+id/textView_volume"
-        android:layout_alignStart="@+id/textView_volume" />
+        android:layout_alignLeft="@+id/textView_volumeh"
+        android:layout_alignStart="@+id/textView_volumeh" />
 
     <TextView
         android:layout_width="150dp"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceLarge"
-        android:id="@+id/textView_volume"
+        android:id="@+id/textView_volumeh"
         android:layout_alignTop="@+id/textView7"
         android:layout_toRightOf="@+id/txt_thick"
         android:layout_toEndOf="@+id/txt_thick" />

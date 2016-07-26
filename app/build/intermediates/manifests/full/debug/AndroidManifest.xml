@@ -24,8 +24,8 @@
         <activity android:name="com.example.pushpitha.constructionhelper.circle" />
         <activity android:name="com.example.pushpitha.constructionhelper.Category" />
         <activity android:name="com.example.pushpitha.constructionhelper.rect" />
-        <activity android:name="com.example.pushpitha.constructionhelper.Parallelogram" />
         <activity android:name="com.example.pushpitha.constructionhelper.CommonActivity" />
+        <activity android:name="com.example.pushpitha.constructionhelper.Homeshape" />
     </application>
 
 </manifest>

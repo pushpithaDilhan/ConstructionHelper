@@ -22,7 +22,6 @@ MERGED from [com.android.support:support-v4:23.4.0] C:\Users\Pushpitha\AndroidSt
 MERGED from [com.android.support:support-v4:23.4.0] C:\Users\Pushpitha\AndroidStudioProjects\ConstructionHelper\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.4.0\AndroidManifest.xml:22:5-20
 MERGED from [com.android.support:support-vector-drawable:23.4.0] C:\Users\Pushpitha\AndroidStudioProjects\ConstructionHelper\app\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\23.4.0\AndroidManifest.xml:7:5-20
 MERGED from [com.android.support:support-v4:23.4.0] C:\Users\Pushpitha\AndroidStudioProjects\ConstructionHelper\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.4.0\AndroidManifest.xml:22:5-20
-MERGED from [com.robinhood.ticker:ticker:1.0.0] C:\Users\Pushpitha\AndroidStudioProjects\ConstructionHelper\app\build\intermediates\exploded-aar\com.robinhood.ticker\ticker\1.0.0\AndroidManifest.xml:10:5-20
 	android:label
 		ADDED from C:\Users\Pushpitha\AndroidStudioProjects\ConstructionHelper\app\src\main\AndroidManifest.xml:8:9-41
 	android:supportsRtl
@@ -59,14 +58,14 @@ activity#com.example.pushpitha.constructionhelper.rect
 ADDED from C:\Users\Pushpitha\AndroidStudioProjects\ConstructionHelper\app\src\main\AndroidManifest.xml:20:9-42
 	android:name
 		ADDED from C:\Users\Pushpitha\AndroidStudioProjects\ConstructionHelper\app\src\main\AndroidManifest.xml:20:19-39
-activity#com.example.pushpitha.constructionhelper.Parallelogram
-ADDED from C:\Users\Pushpitha\AndroidStudioProjects\ConstructionHelper\app\src\main\AndroidManifest.xml:21:9-60
-	android:name
-		ADDED from C:\Users\Pushpitha\AndroidStudioProjects\ConstructionHelper\app\src\main\AndroidManifest.xml:21:19-48
 activity#com.example.pushpitha.constructionhelper.CommonActivity
-ADDED from C:\Users\Pushpitha\AndroidStudioProjects\ConstructionHelper\app\src\main\AndroidManifest.xml:22:9-61
+ADDED from C:\Users\Pushpitha\AndroidStudioProjects\ConstructionHelper\app\src\main\AndroidManifest.xml:21:9-52
 	android:name
-		ADDED from C:\Users\Pushpitha\AndroidStudioProjects\ConstructionHelper\app\src\main\AndroidManifest.xml:22:19-49
+		ADDED from C:\Users\Pushpitha\AndroidStudioProjects\ConstructionHelper\app\src\main\AndroidManifest.xml:21:19-49
+activity#com.example.pushpitha.constructionhelper.Homeshape
+ADDED from C:\Users\Pushpitha\AndroidStudioProjects\ConstructionHelper\app\src\main\AndroidManifest.xml:22:9-56
+	android:name
+		ADDED from C:\Users\Pushpitha\AndroidStudioProjects\ConstructionHelper\app\src\main\AndroidManifest.xml:22:19-44
 uses-sdk
 INJECTED from C:\Users\Pushpitha\AndroidStudioProjects\ConstructionHelper\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 MERGED from [com.android.support:appcompat-v7:23.4.0] C:\Users\Pushpitha\AndroidStudioProjects\ConstructionHelper\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.4.0\AndroidManifest.xml:21:5-23:78
@@ -76,7 +75,6 @@ MERGED from [com.android.support:support-v4:23.4.0] C:\Users\Pushpitha\AndroidSt
 MERGED from [com.android.support:support-v4:23.4.0] C:\Users\Pushpitha\AndroidStudioProjects\ConstructionHelper\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.4.0\AndroidManifest.xml:20:5-43
 MERGED from [com.android.support:support-vector-drawable:23.4.0] C:\Users\Pushpitha\AndroidStudioProjects\ConstructionHelper\app\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\23.4.0\AndroidManifest.xml:5:5-43
 MERGED from [com.android.support:support-v4:23.4.0] C:\Users\Pushpitha\AndroidStudioProjects\ConstructionHelper\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.4.0\AndroidManifest.xml:20:5-43
-MERGED from [com.robinhood.ticker:ticker:1.0.0] C:\Users\Pushpitha\AndroidStudioProjects\ConstructionHelper\app\build\intermediates\exploded-aar\com.robinhood.ticker\ticker\1.0.0\AndroidManifest.xml:6:5-8:41
 	tools:overrideLibrary
 		ADDED from [com.android.support:appcompat-v7:23.4.0] C:\Users\Pushpitha\AndroidStudioProjects\ConstructionHelper\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.4.0\AndroidManifest.xml:23:9-75
 	android:targetSdkVersion

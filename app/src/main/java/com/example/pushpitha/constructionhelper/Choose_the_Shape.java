@@ -73,8 +73,7 @@ public class Choose_the_Shape extends AppCompatActivity {
         houseshape.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent home_next = new Intent(getApplicationContext(),CommonActivity.class);
-                home_next.putExtra("shape","homeshape");
+                Intent home_next = new Intent(getApplicationContext(),Homeshape.class);
                 startActivity(home_next);
             }
         });

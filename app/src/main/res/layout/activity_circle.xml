@@ -39,6 +39,7 @@
         android:layout_alignBottom="@+id/textView"
         android:layout_alignRight="@+id/imageView"
         android:layout_alignEnd="@+id/imageView"
+        android:inputType="number"
         android:layout_marginRight="35dp"
         android:layout_marginEnd="35dp" />
 
@@ -49,6 +50,7 @@
         android:layout_below="@+id/txt_radius"
         android:layout_alignRight="@+id/txt_radius"
         android:layout_alignEnd="@+id/txt_radius"
+        android:inputType="number"
         android:layout_alignLeft="@+id/txt_radius"
         android:layout_alignStart="@+id/txt_radius" />
 

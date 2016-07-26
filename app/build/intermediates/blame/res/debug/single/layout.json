@@ -80,8 +80,8 @@
         "source": "C:\\Users\\Pushpitha\\AndroidStudioProjects\\ConstructionHelper\\app\\src\\main\\res\\layout\\activity_rect.xml"
     },
     {
-        "merged": "C:\\Users\\Pushpitha\\AndroidStudioProjects\\ConstructionHelper\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_parallelogram.xml",
-        "source": "C:\\Users\\Pushpitha\\AndroidStudioProjects\\ConstructionHelper\\app\\src\\main\\res\\layout\\activity_parallelogram.xml"
+        "merged": "C:\\Users\\Pushpitha\\AndroidStudioProjects\\ConstructionHelper\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_homeshape.xml",
+        "source": "C:\\Users\\Pushpitha\\AndroidStudioProjects\\ConstructionHelper\\app\\src\\main\\res\\layout\\activity_homeshape.xml"
     },
     {
         "merged": "C:\\Users\\Pushpitha\\AndroidStudioProjects\\ConstructionHelper\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_screen_simple_overlay_action_mode.xml",
@@ -108,12 +108,12 @@
         "source": "C:\\Users\\Pushpitha\\AndroidStudioProjects\\ConstructionHelper\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.4.0\\res\\layout\\abc_search_dropdown_item_icons_2line.xml"
     },
     {
-        "merged": "C:\\Users\\Pushpitha\\AndroidStudioProjects\\ConstructionHelper\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_popup_menu_item_layout.xml",
-        "source": "C:\\Users\\Pushpitha\\AndroidStudioProjects\\ConstructionHelper\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.4.0\\res\\layout\\abc_popup_menu_item_layout.xml"
-    },
-    {
         "merged": "C:\\Users\\Pushpitha\\AndroidStudioProjects\\ConstructionHelper\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_menu_layout.xml",
         "source": "C:\\Users\\Pushpitha\\AndroidStudioProjects\\ConstructionHelper\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.4.0\\res\\layout\\abc_action_menu_layout.xml"
+    },
+    {
+        "merged": "C:\\Users\\Pushpitha\\AndroidStudioProjects\\ConstructionHelper\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_popup_menu_item_layout.xml",
+        "source": "C:\\Users\\Pushpitha\\AndroidStudioProjects\\ConstructionHelper\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.4.0\\res\\layout\\abc_popup_menu_item_layout.xml"
     },
     {
         "merged": "C:\\Users\\Pushpitha\\AndroidStudioProjects\\ConstructionHelper\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_mode_close_item_material.xml",

@@ -28,11 +28,13 @@
             android:id="@+id/textView8" />
 
         <EditText
-            android:layout_width="10dp"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:inputType="number"
+            android:ems="10"
             android:id="@+id/editText_mc"
-            android:layout_weight="0.47"
-            android:allowUndo="true" />
+            android:layout_weight="1" />
+
     </LinearLayout>
 
     <LinearLayout
@@ -52,6 +54,7 @@
             android:layout_width="10dp"
             android:layout_height="wrap_content"
             android:id="@+id/editText_nc"
+            android:inputType="number"
             android:layout_weight="0.47"
             android:allowUndo="true" />
     </LinearLayout>
@@ -74,6 +77,7 @@
             android:layout_height="wrap_content"
             android:id="@+id/editText_tc"
             android:layout_weight="0.47"
+            android:inputType="number"
             android:allowUndo="true" />
     </LinearLayout>
 
@@ -94,7 +98,7 @@
             android:layout_width="150dp"
             android:layout_height="wrap_content"
             android:textAppearance="?android:attr/textAppearanceLarge"
-            android:id="@+id/textView_area" />
+            android:id="@+id/textView_areac" />
 
     </LinearLayout>
 
@@ -116,7 +120,7 @@
             android:layout_width="150dp"
             android:layout_height="wrap_content"
             android:textAppearance="?android:attr/textAppearanceLarge"
-            android:id="@+id/textView_volume" />
+            android:id="@+id/textView_volumeh" />
 
     </LinearLayout>
 

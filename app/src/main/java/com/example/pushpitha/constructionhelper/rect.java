@@ -27,7 +27,7 @@ public class rect extends AppCompatActivity {
         t_edt = (EditText) findViewById(R.id.editText_t);
 
         area_ans = (TextView) findViewById(R.id.textView_area);
-        volume_ans = (TextView) findViewById(R.id.textView_volume);
+        volume_ans = (TextView) findViewById(R.id.textView_volumeh);
 
         areabtn = (Button) findViewById(R.id.button_area1);
         volbtn = (Button) findViewById(R.id.button_vol1);

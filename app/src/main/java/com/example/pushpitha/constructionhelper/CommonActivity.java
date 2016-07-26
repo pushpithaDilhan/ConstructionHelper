@@ -7,6 +7,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
+import android.widget.TextView;
 import android.widget.Toast;
 
 public class CommonActivity extends AppCompatActivity {
@@ -14,6 +15,7 @@ public class CommonActivity extends AppCompatActivity {
     private EditText m_in , n_in ,t_in;
     private float m_value, n_value , t_value , area , volume ;
     private String shape;
+    private TextView area_view , volume_view ;
 
 
     @Override
@@ -30,13 +32,14 @@ public class CommonActivity extends AppCompatActivity {
             common.setImageResource(R.drawable.bulletshape2);
         }else if(shape.equals("oval")){
             common.setImageResource(R.drawable.oval2);
-        }else if(shape.equals("homeshape")){
-            common.setImageResource(R.drawable.houseshape2);
         }
 
         m_in = (EditText) findViewById(R.id.editText_mc);
         n_in = (EditText) findViewById(R.id.editText_nc);
         t_in = (EditText) findViewById(R.id.editText_tc);
+
+        area_view = (TextView) findViewById(R.id.textView_areac);
+        volume_view = (TextView) findViewById(R.id.textView_volumeh);
 
         Button area_c = (Button) findViewById(R.id.button_areac);
         Button volume_c = (Button) findViewById(R.id.button_volumec);
@@ -45,8 +48,20 @@ public class CommonActivity extends AppCompatActivity {
         area_c.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                m_value = Float.parseFloat(m_in.getText().toString());
-                n_value = Float.parseFloat(n_in.getText().toString());
+                try {
+                    m_value = Float.parseFloat(m_in.getText().toString());
+                    n_value = Float.parseFloat(n_in.getText().toString());
+                    if (shape.equals("parallelogram")) {
+                        area = m_value * n_value;
+                    } else if (shape.equals("oval")) {
+                        area = (float) (m_value * n_value + Math.PI * n_value * n_value / 4.0);
+                    } else if (shape.equals("bulletshape")) {
+                        area = (float) (m_value * n_value + Math.PI * m_value * m_value / 4.0);
+                    }
+                    area_view.setText(area + "");
+                }catch (Exception e){
+                    Toast.makeText(getApplicationContext(),"m or n values is not valid.",Toast.LENGTH_SHORT).show();
+                }
 
             }
         });
@@ -54,9 +69,26 @@ public class CommonActivity extends AppCompatActivity {
         volume_c.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                m_value = Float.parseFloat(m_in.getText().toString());
-                n_value = Float.parseFloat(n_in.getText().toString());
-                t_value = Float.parseFloat(t_in.getText().toString());
+                try {
+                    m_value = Float.parseFloat(m_in.getText().toString());
+                    n_value = Float.parseFloat(n_in.getText().toString());
+                    t_value = Float.parseFloat(t_in.getText().toString());
+                    if (shape.equals("parallelogram")) {
+                        area = m_value * n_value;
+                        volume = area * t_value;
+                    } else if (shape.equals("oval")) {
+                        area = (float) (m_value * n_value + Math.PI * n_value * n_value / 4.0);
+                        volume = area * t_value;
+                    } else if (shape.equals("bulletshape")) {
+                        area = (float) (m_value * n_value + Math.PI * m_value * m_value / 4.0);
+                        volume = area * t_value;
+                    }
+                    area_view.setText(area + "");
+                    volume_view.setText(volume + "");
+
+                }catch (Exception e){
+                    Toast.makeText(getApplicationContext(),"m ,Thickness or n values is not valid.",Toast.LENGTH_SHORT).show();
+                }
             }
         });
 
