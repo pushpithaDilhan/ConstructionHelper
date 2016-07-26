@@ -26,6 +26,7 @@ public class Choose_the_Shape extends AppCompatActivity {
         bulletshape = (ImageButton) findViewById(R.id.bulletshape);
         oval = (ImageButton) findViewById(R.id.oval);
         houseshape = (ImageButton) findViewById(R.id.houseshape);
+
         circle.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -33,11 +34,48 @@ public class Choose_the_Shape extends AppCompatActivity {
                     startActivity(circle_next);
             }
         });
+
         rectangle.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent rect_next = new Intent(getApplicationContext(),rect.class);
                 startActivity(rect_next);
+            }
+        });
+
+        parallelogram.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent para_next = new Intent(getApplicationContext(),CommonActivity.class);
+                para_next.putExtra("shape","parallelogram");
+                startActivity(para_next);
+            }
+        });
+
+        bulletshape.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent bullet_next = new Intent(getApplicationContext(),CommonActivity.class);
+                bullet_next.putExtra("shape","bulletshape");
+                startActivity(bullet_next);
+            }
+        });
+
+        oval.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent oval_next = new Intent(getApplicationContext(),CommonActivity.class);
+                oval_next.putExtra("shape","oval");
+                startActivity(oval_next);
+            }
+        });
+
+        houseshape.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent home_next = new Intent(getApplicationContext(),CommonActivity.class);
+                home_next.putExtra("shape","homeshape");
+                startActivity(home_next);
             }
         });
     }

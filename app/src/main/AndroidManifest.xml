@@ -17,7 +17,8 @@
         </activity>
         <activity android:name=".circle" />
         <activity android:name=".Category" />
-        <activity android:name=".rect"></activity>
+        <activity android:name=".rect" />
+        <activity android:name=".CommonActivity"></activity>
     </application>
 
 </manifest>

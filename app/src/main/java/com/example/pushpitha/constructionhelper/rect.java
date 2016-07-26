@@ -4,7 +4,6 @@ import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
-import android.view.ViewDebug;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
@@ -23,8 +22,8 @@ public class rect extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_rect);
 
-        m_edt = (EditText) findViewById(R.id.editText_m);
-        n_edt = (EditText) findViewById(R.id.editText_n);
+        m_edt = (EditText) findViewById(R.id.editText_mc);
+        n_edt = (EditText) findViewById(R.id.editText_nc);
         t_edt = (EditText) findViewById(R.id.editText_t);
 
         area_ans = (TextView) findViewById(R.id.textView_area);

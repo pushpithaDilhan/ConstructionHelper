@@ -1,6 +1,6 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\Users\Pushpitha\AndroidStudioProjects\ConstructionHelper\app\src\main\AndroidManifest.xml:2:1-23:12
+ADDED from C:\Users\Pushpitha\AndroidStudioProjects\ConstructionHelper\app\src\main\AndroidManifest.xml:2:1-25:12
 	package
 		ADDED from C:\Users\Pushpitha\AndroidStudioProjects\ConstructionHelper\app\src\main\AndroidManifest.xml:3:5-55
 		INJECTED from C:\Users\Pushpitha\AndroidStudioProjects\ConstructionHelper\app\src\main\AndroidManifest.xml
@@ -14,7 +14,7 @@ ADDED from C:\Users\Pushpitha\AndroidStudioProjects\ConstructionHelper\app\src\m
 		INJECTED from C:\Users\Pushpitha\AndroidStudioProjects\ConstructionHelper\app\src\main\AndroidManifest.xml
 		INJECTED from C:\Users\Pushpitha\AndroidStudioProjects\ConstructionHelper\app\src\main\AndroidManifest.xml
 application
-ADDED from C:\Users\Pushpitha\AndroidStudioProjects\ConstructionHelper\app\src\main\AndroidManifest.xml:5:5-21:19
+ADDED from C:\Users\Pushpitha\AndroidStudioProjects\ConstructionHelper\app\src\main\AndroidManifest.xml:5:5-23:19
 MERGED from [com.android.support:appcompat-v7:23.4.0] C:\Users\Pushpitha\AndroidStudioProjects\ConstructionHelper\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.4.0\AndroidManifest.xml:25:5-20
 MERGED from [com.android.support:animated-vector-drawable:23.4.0] C:\Users\Pushpitha\AndroidStudioProjects\ConstructionHelper\app\build\intermediates\exploded-aar\com.android.support\animated-vector-drawable\23.4.0\AndroidManifest.xml:7:5-20
 MERGED from [com.android.support:support-vector-drawable:23.4.0] C:\Users\Pushpitha\AndroidStudioProjects\ConstructionHelper\app\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\23.4.0\AndroidManifest.xml:7:5-20
@@ -56,9 +56,17 @@ ADDED from C:\Users\Pushpitha\AndroidStudioProjects\ConstructionHelper\app\src\m
 	android:name
 		ADDED from C:\Users\Pushpitha\AndroidStudioProjects\ConstructionHelper\app\src\main\AndroidManifest.xml:19:19-43
 activity#com.example.pushpitha.constructionhelper.rect
-ADDED from C:\Users\Pushpitha\AndroidStudioProjects\ConstructionHelper\app\src\main\AndroidManifest.xml:20:9-51
+ADDED from C:\Users\Pushpitha\AndroidStudioProjects\ConstructionHelper\app\src\main\AndroidManifest.xml:20:9-42
 	android:name
 		ADDED from C:\Users\Pushpitha\AndroidStudioProjects\ConstructionHelper\app\src\main\AndroidManifest.xml:20:19-39
+activity#com.example.pushpitha.constructionhelper.Parallelogram
+ADDED from C:\Users\Pushpitha\AndroidStudioProjects\ConstructionHelper\app\src\main\AndroidManifest.xml:21:9-60
+	android:name
+		ADDED from C:\Users\Pushpitha\AndroidStudioProjects\ConstructionHelper\app\src\main\AndroidManifest.xml:21:19-48
+activity#com.example.pushpitha.constructionhelper.CommonActivity
+ADDED from C:\Users\Pushpitha\AndroidStudioProjects\ConstructionHelper\app\src\main\AndroidManifest.xml:22:9-61
+	android:name
+		ADDED from C:\Users\Pushpitha\AndroidStudioProjects\ConstructionHelper\app\src\main\AndroidManifest.xml:22:19-49
 uses-sdk
 INJECTED from C:\Users\Pushpitha\AndroidStudioProjects\ConstructionHelper\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 MERGED from [com.android.support:appcompat-v7:23.4.0] C:\Users\Pushpitha\AndroidStudioProjects\ConstructionHelper\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.4.0\AndroidManifest.xml:21:5-23:78
