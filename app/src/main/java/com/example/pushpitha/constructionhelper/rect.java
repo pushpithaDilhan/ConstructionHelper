@@ -40,12 +40,11 @@ public class rect extends AppCompatActivity {
                     m = Float.parseFloat(m_edt.getText().toString());
                     n = Float.parseFloat(n_edt.getText().toString());
                     area = m * n;
-                    hasFuture = true ;
-                    area_ans.setText(area + "");
+                    area_ans.setText(Float.toString(area));
+                    volume_ans.setText("");
                 }catch (Exception e){
                     Toast.makeText(getApplicationContext(),"m or n value is not valid",Toast.LENGTH_SHORT).show();
                     area_ans.setText("");
-                    hasFuture = false ;
                 }
             }
         });
@@ -60,13 +59,12 @@ public class rect extends AppCompatActivity {
                     area = m * n;
                     volume = t*area ;
                     hasFuture = true ;
-                    area_ans.setText(area + "");
-                    volume_ans.setText(volume+"");
+                    area_ans.setText(Float.toString(area ));
+                    volume_ans.setText(Float.toString(volume));
                 }catch (Exception e){
                     Toast.makeText(getApplicationContext(),"m , n or t value is not valid",Toast.LENGTH_SHORT).show();
                     area_ans.setText("");
                     volume_ans.setText("");
-                    hasFuture = false ;
                 }
             }
         });
@@ -74,14 +72,11 @@ public class rect extends AppCompatActivity {
         nextbtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if(hasFuture){
                     Intent category = new Intent(getApplicationContext(),Category.class);
+                    category.putExtra("area",area);
+                    category.putExtra("volume",volume);
                     startActivity(category);
-                }else{
-                    Toast.makeText(getApplicationContext(),"Area or Volume is needed.",Toast.LENGTH_SHORT).show();
-                }
-
-            }
+                            }
         });
     }
 }

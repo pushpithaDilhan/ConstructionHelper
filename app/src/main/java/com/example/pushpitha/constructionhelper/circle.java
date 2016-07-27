@@ -37,11 +37,10 @@ public class circle extends AppCompatActivity {
                     System.out.println(radius);
                     area_answer = (float) Math.PI*radius*radius ;
                     hasFuture = true ;
-                    areaAnswer.setText(area_answer+"");
+                    areaAnswer.setText(Float.toString(area_answer));
                     volAnswer.setText("");
                 }catch(Exception e){
                     Toast.makeText(getApplicationContext() ,"R value is not acceptable",Toast.LENGTH_SHORT).show();
-                    hasFuture  =false ;
                 }
             }
         });
@@ -60,12 +59,10 @@ public class circle extends AppCompatActivity {
                         radius = Float.parseFloat(r.getText().toString().trim());
                         area_answer = (float) Math.PI*radius*radius;
                         volume = thick*area_answer ;
-                        volAnswer.setText(volume+"");
-                        areaAnswer.setText(area_answer+"");
-                        hasFuture = true;
+                        volAnswer.setText(Float.toString(volume));
+                        areaAnswer.setText(Float.toString(area_answer));
                     }catch(Exception e){
                         Toast.makeText(getApplicationContext(),"Thickness or R is not acceptable.",Toast.LENGTH_SHORT).show();
-                        hasFuture = false ;
                     }
                 }
             }
@@ -75,12 +72,10 @@ public class circle extends AppCompatActivity {
         next.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if(hasFuture){
                     Intent category = new Intent(getApplicationContext(),Category.class);
+                    category.putExtra("area",area_answer);
+                    category.putExtra("volume",volume);
                     startActivity(category);
-                }else{
-                    Toast.makeText(getApplicationContext(),"Area or Volume is needed.",Toast.LENGTH_SHORT).show();
-                }
 
             }
         });

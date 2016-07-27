@@ -58,7 +58,7 @@ public class CommonActivity extends AppCompatActivity {
                     } else if (shape.equals("bulletshape")) {
                         area = (float) (m_value * n_value + Math.PI * m_value * m_value / 4.0);
                     }
-                    area_view.setText(area + "");
+                    area_view.setText(Float.toString(area ));
                 }catch (Exception e){
                     Toast.makeText(getApplicationContext(),"m or n values is not valid.",Toast.LENGTH_SHORT).show();
                 }
@@ -83,8 +83,8 @@ public class CommonActivity extends AppCompatActivity {
                         area = (float) (m_value * n_value + Math.PI * m_value * m_value / 4.0);
                         volume = area * t_value;
                     }
-                    area_view.setText(area + "");
-                    volume_view.setText(volume + "");
+                    area_view.setText(Float.toString(area));
+                    volume_view.setText(Float.toString(volume));
 
                 }catch (Exception e){
                     Toast.makeText(getApplicationContext(),"m ,Thickness or n values is not valid.",Toast.LENGTH_SHORT).show();
@@ -94,13 +94,11 @@ public class CommonActivity extends AppCompatActivity {
 
         next_c.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View v) {
-                if(true){                                                      // attention need "hasFuture" variable
+            public void onClick(View v) {                                                     // attention need "hasFuture" variable
                     Intent category = new Intent(getApplicationContext(),Category.class);
+                    category.putExtra("area",area);
+                    category.putExtra("volume",volume);
                     startActivity(category);
-                }else{
-                    Toast.makeText(getApplicationContext(),"Area or Volume is needed.",Toast.LENGTH_SHORT).show();
-                }
 
             }
         });

@@ -44,7 +44,8 @@ public class Homeshape extends AppCompatActivity {
                     n_value = Float.parseFloat(n_inh.getText().toString());
                     h_value = Float.parseFloat(h_inh.getText().toString());
                     area = m_value * n_value + m_value * h_value;
-                    area_view.setText(area + "");
+                    area_view.setText(Float.toString(area));
+                    volume_view.setText("");
                 }catch (Exception e){
                     Toast.makeText(getApplicationContext(),"m ,h or n values is not valid.",Toast.LENGTH_SHORT).show();
                 }
@@ -63,8 +64,8 @@ public class Homeshape extends AppCompatActivity {
                     h_value = Float.parseFloat(h_inh.getText().toString());
                     area = m_value * n_value + m_value * h_value;
                     volume = area * t_value;
-                    area_view.setText(area + "");
-                    volume_view.setText(volume + "");
+                    area_view.setText(Float.toString(area));
+                    volume_view.setText(Float.toString(volume) );
                 }catch(Exception e){
                     Toast.makeText(getApplicationContext()," m, h, thickness or n values is not valid.",Toast.LENGTH_SHORT).show();
                 }
@@ -74,12 +75,10 @@ public class Homeshape extends AppCompatActivity {
         next_c.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if(true){                                                      // attention need "hasFuture" variable
                     Intent category = new Intent(getApplicationContext(),Category.class);
+                    category.putExtra("area",area);
+                    category.putExtra("volume",volume);
                     startActivity(category);
-                }else{
-                    Toast.makeText(getApplicationContext(),"Area or Volume is needed.", Toast.LENGTH_SHORT).show();
-                }
 
             }
         });
