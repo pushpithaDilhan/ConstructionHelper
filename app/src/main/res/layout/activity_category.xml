@@ -7,52 +7,6 @@
     tools:context="com.example.pushpitha.constructionhelper.Category"
     android:weightSum="1">
 
-    <LinearLayout
-        android:orientation="horizontal"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_weight="0.24">
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textAppearance="?android:attr/textAppearanceLarge"
-            android:id="@+id/textView13"
-            android:text="Area   "
-            android:paddingTop="20dp"
-            android:paddingLeft="80dp" />
-
-        <EditText
-            android:layout_width="195dp"
-            android:layout_height="wrap_content"
-            android:inputType="number"
-            android:ems="10"
-            android:id="@+id/editText_areaforward" />
-    </LinearLayout>
-
-    <LinearLayout
-        android:orientation="horizontal"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_weight="0.24">
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textAppearance="?android:attr/textAppearanceLarge"
-            android:id="@+id/textView14"
-            android:text="Volume "
-            android:paddingTop="20dp"
-            android:paddingLeft="80dp" />
-
-        <EditText
-            android:layout_width="179dp"
-            android:layout_height="wrap_content"
-            android:inputType="number"
-            android:ems="10"
-            android:id="@+id/editText_volforward" />
-    </LinearLayout>
-
     <ListView
         android:layout_width="match_parent"
         android:layout_height="368dp"

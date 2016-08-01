@@ -13,19 +13,13 @@ import android.widget.Toast;
 
 public class Category extends AppCompatActivity {
 
-    EditText area,volume ;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_category);
-        Intent past = getIntent();
-
-        area = (EditText) findViewById(R.id.editText_areaforward);
-        volume = (EditText) findViewById(R.id.editText_volforward);
-
-        area.setText(Float.toString(past.getFloatExtra("area", 0)));
-        volume.setText(Float.toString(past.getFloatExtra("volume",0)));
+        final Intent past = getIntent();
 
         ListView listView = (ListView) findViewById(R.id.listView);
         ArrayAdapter<CharSequence> catList = ArrayAdapter.createFromResource(this , R.array.category_list ,android.R.layout.simple_list_item_1);
@@ -36,10 +30,19 @@ public class Category extends AppCompatActivity {
                 if(position==0){
                     Intent concrete  = new Intent(getApplicationContext(),Concrete.class);
                     try {
-                        concrete.putExtra("volume", Float.parseFloat(volume.getText().toString()));
+                        concrete.putExtra("volume", past.getFloatExtra("volume",0));
                         startActivity(concrete);
                     }catch (Exception e){
                         Toast.makeText(getApplicationContext(),"Volume is not valid.",Toast.LENGTH_SHORT).show();
+                    }
+                }
+                else if (position==5){
+                    Intent painting  = new Intent(getApplicationContext(),Painting.class);
+                    try {
+                        painting.putExtra("area", past.getFloatExtra("area",0));
+                        startActivity(painting);
+                    }catch (Exception e){
+                        Toast.makeText(getApplicationContext(),"Area is not valid.",Toast.LENGTH_SHORT).show();
                     }
                 }
             }

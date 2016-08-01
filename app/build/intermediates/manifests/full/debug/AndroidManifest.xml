@@ -27,6 +27,7 @@
         <activity android:name="com.example.pushpitha.constructionhelper.CommonActivity" />
         <activity android:name="com.example.pushpitha.constructionhelper.Homeshape" />
         <activity android:name="com.example.pushpitha.constructionhelper.Concrete" />
+        <activity android:name="com.example.pushpitha.constructionhelper.Painting" />
     </application>
 
 </manifest>
